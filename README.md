@@ -1,4 +1,4 @@
-# OmeGak (also) does dotfiles
+# Josh (also) does dotfiles
 
 ```
    ██████   ██████  ████████ ███████ ██ ██      ███████ ███████
@@ -31,7 +31,7 @@ This framework was forked from [Zach Holman](https://github.com/holman)'s
 Easy. Run this:
 
 ```bash
-git clone --recursive https://github.com/omegak/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/Joshfairhead/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 make
 ```
