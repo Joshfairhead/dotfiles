@@ -24,10 +24,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # -----------------------------------------------------------------------------
 
 # Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "OmeBook"
-#sudo scutil --set HostName "OmeBook"
-#sudo scutil --set LocalHostName "OmeBook"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "OmeBook"
+#sudo scutil --set ComputerName "JoshAir"
+#sudo scutil --set HostName "JoshAir"
+#sudo scutil --set LocalHostName "JoshAir"
+#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "JoshAir"
 
 # Set sleep delay on charger (-c) and on battery (-b) in minutes
 sudo pmset -c sleep 30
@@ -107,7 +107,7 @@ defaults write com.apple.digihub com.apple.digihub.dvd.video.appeared -dict acti
 # -----------------------------------------------------------------------------
 
 # Automatically adjust brightness
-sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool true
+sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -125,8 +125,8 @@ sudo /usr/libexec/PlistBuddy -c "Set :${currentUserUID}:CBBlueReductionStatus:Bl
 sudo /usr/libexec/PlistBuddy -c "Set :${currentUserUID}:CBBlueReductionStatus:BlueReductionMode 1" \
   private/var/root/Library/Preferences/com.apple.CoreBrightness.plist
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+# Save screenshots to the picturesp
+defaults write com.apple.screencapture location -string "${HOME}/Pictures"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -168,13 +168,12 @@ defaults write com.apple.controlstrip FullCustomized \
     NSTouchBarItemIdentifierFlexibleSpace, com.apple.system.screen-lock)'
 
 # Set language and text formats
-defaults write -g AppleLanguages -array "en-US" "es-ES" "fr-CH"
-defaults write -g AppleLocale -string "en_ES"
+defaults write -g AppleLanguages -string "en-US"
 defaults write -g AppleMeasurementUnits -string "Centimeters"
 defaults write -g AppleMetricUnits -bool true
 
 # Configure spelling
-defaults write -g NSPreferredSpellServers -array '(en, Apple)' '(es, Apple)' '(fr, Apple)'
+defaults write -g NSPreferredSpellServers -string '(en, Apple)'
 
 # Disable auto-correct and the sort
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
