@@ -1,11 +1,7 @@
 # Essentials
-brave-browser
-dropbox
-google-backup-and-sync
-backblaze
-gpg-suite
 transmission
 keybase
+firefox
 
 # Development
 iterm2
@@ -15,45 +11,13 @@ ngrok
 
 # Messaging
 discord
-element
-messenger
 signal
 telegram
-wire
 
 # Media
-plex-media-player
-plex-media-server
-spotify
 vlc
-
-# Research
-evernote
-zotero
-
-# Virtualization
-vagrant
-virtualbox
-
-# Games
-steam
-minecraft
-openemu
-
-# Misc
-calibre
-handbrake
-qlmarkdown
-qlvideo
-the-unarchiver
-ukelele
-
-# Drivers
-xbox360-controller-driver-unofficial
-logitech-unifying
-osxfuse
 
 # Others
 docker
-java
 mactex
+figma
